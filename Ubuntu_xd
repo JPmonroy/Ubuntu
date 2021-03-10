@@ -1,0 +1,147 @@
+import java.util.Scanner;
+public class Ubuntu_xd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String command [] = new String[30];
+		command [0]="clear";
+		command [1]="cp";
+		command [2]="mv";
+		command [3]="rmdir";
+		command [4]="grep";
+		command [5]="/";
+		command [6]="ps";
+		command [7]="..";
+		command [8]=".";
+		command [9]="$";
+		command [10]="sudo";
+		command [11]="cd";
+		command [12]="head";
+		command [13]="pwd";
+		command [14]="mkdir";
+		command [15]="ls";
+		command [16]="chown";
+		command [17]="chmod";
+		command [18]="qzip";
+		command [19]="cat";
+		command [20]="tail";
+		command [21]="rm";
+		command [22]="sed";
+		command [23]="nl";
+		
+		String descripcion [] = new String [30];
+		descripcion [0]="Sirve para limpiar la terminal";
+		descripcion [1]="Permite copiar un archivo especificando el nombre del archivo y su extensión y el lugar a donde se desea movilizar";
+		descripcion [2]="Permite movilizar un archivo de un directorio a otro";
+		descripcion [3]="Permite eliminar un directorio";
+		descripcion [4]="Este comando permite localizar entre lineas del documento si existe la palabra que le indiquemos";
+		descripcion [5]="Indica el directorio raíz del sistema";
+		descripcion [6]="Muestra los procesos que estoy ejecutando";
+		descripcion [7]="Indica que el directorio padre";
+		descripcion [8]="Indica el directorio donde se encuantra actualmete";
+		descripcion [9]="Indica el directorio del usuario";
+		descripcion [10]="Es el comando para activar el superusuario";
+		descripcion [11]="Permite movilizarte entre directorios";
+		descripcion [12]="Muestra el contenido de las primeras líneas";
+		descripcion [13]="Muestra la direccion donde me encuentro";
+		descripcion [14]="Permite crear un directorio nuevo";
+		descripcion [15]="Despliega el contenido de la carpeta";
+		descripcion [16]="Con este comando cambiamos al propietario del archivo con permisos del administrador";
+		descripcion [17]="Permite cambiar los permisos de acceso de un directorio";
+		descripcion [18]="Con este comando podemos comprimir archivos";
+		descripcion [19]="Permite copiar un archuvo especifico";
+		descripcion [20]="Este comando es todo lo contradio a head";
+		descripcion [21]="Permite eliminar un archivo";
+		descripcion [22]="Este comando permite cambiar una palabra por otra";
+		descripcion [23]="Muestra el documento con las líneas enumeradas";
+		
+		String noEncontrado ="Hijole!yo creo que no se va a poder ";
+		boolean program = true;
+		
+		
+		
+		System.out.println("         Buscar comando");
+		System.out.println("-------------------------------------");
+		System.out.println("Bienvenido a mi proyecto de Produccion de contenidos digitales :D");
+		System.out.println("");
+		
+		do {
+			Scanner pregunta = new Scanner(System.in);
+			System.out.println("Comando: ");
+			String respuesta = pregunta.nextLine();
+			
+			int correcto = 0;	
+			
+			for(int i=0;i<=29;i++) {
+				
+			if (respuesta.equalsIgnoreCase(command[i])) {
+				System.out.println("----------------------------------------------------------------------------------");
+				System.out.println("Comando: "+command[i]);
+				System.out.println("Descripción: "+descripcion[i]);
+				System.out.println("");
+				correcto=1;
+				
+			}else if (respuesta.equals("exit")) {
+				program = false;
+				correcto =1;
+			   }
+			}
+			if (correcto==0) {
+				System.out.println("----------------------");
+				System.out.println("Hijole!yo creo que no se va a poder");
+				System.out.println("_____Sexy?Sex\r\n"
+						+ "____?Sexy?Sexy\r\n"
+						+ "___y?Sexy?Sexy?\r\n"
+						+ "___?Sexy?Sexy?S\r\n"
+						+ "___?Sexy?Sexy?S\r\n"
+						+ "__?Sexy?Sexy?Se\r\n"
+						+ "_?Sexy?Sexy?Se\r\n"
+						+ "_?Sexy?Sexy?Se\r\n"
+						+ "_?Sexy?Sexy?Sexy?\r\n"
+						+ "?Sexy?Sexy?Sexy?Sexy\r\n"
+						+ "?Sexy?Sexy?Sexy?Sexy?Se\r\n"
+						+ " ?Sexy?Sexy?Sexy?Sexy?Sex\r\n"
+						+ "_?Sexy?__?Sexy?Sexy?Sex\r\n"
+						+ "___?Sex____?Sexy?Sexy?\r\n"
+						+ "___?Sex_____?Sexy?Sexy\r\n"
+						+ "___?Sex_____?Sexy?Sexy\r\n"
+						+ "____?Sex____?Sexy?Sexy\r\n"
+						+ "_____?Se____?Sexy?Sex\r\n"
+						+ "______?Se__?Sexy?Sexy\r\n"
+						+ "_______?Sexy?Sexy?Sex\r\n"
+						+ "________?Sexy?Sexy?sex\r\n"
+						+ "_______?Sexy?Sexy?Sexy?Se\r\n"
+						+ "_______?Sexy?Sexy?Sexy?Sexy?\r\n"
+						+ "_______?Sexy?Sexy?Sexy?Sexy?Sexy\r\n"
+						+ "_______?Sexy?Sexy?Sexy?Sexy?Sexy?S\r\n"
+						+ "________?Sexy?Sexy____?Sexy?Sexy?se\r\n"
+						+ "_________?Sexy?Se_______?Sexy?Sexy?\r\n"
+						+ "_________?Sexy?Se_____?Sexy?Sexy?\r\n"
+						+ "_________?Sexy?S____?Sexy?Sexy\r\n"
+						+ "_________?Sexy?S_?Sexy?Sexy\r\n"
+						+ "________?Sexy?Sexy?Sexy\r\n"
+						+ "________?Sexy?Sexy?S\r\n"
+						+ "________?Sexy?Sexy\r\n"
+						+ "_______?Sexy?Se\r\n"
+						+ "_______?Sexy?\r\n"
+						+ "______?Sexy?\r\n"
+						+ "______?Sexy?\r\n"
+						+ "______?Sexy?\r\n"
+						+ "______?Sexy\r\n"
+						+ "______?Sexy\r\n"
+						+ "_______?Sex\r\n"
+						+ "_______?Sex\r\n"
+						+ "_______?Sex\r\n"
+						+ "______?Sexy\r\n"
+						+ "______?Sexy\r\n"
+						+ "_______Sexy\r\n"
+						+ "_______ Sexy?\r\n"
+						+ "________SexY");
+
+			}
+			
+		} while (program);
+	}
+
+}
+
